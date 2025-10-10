@@ -1,205 +1,1150 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sri Kanaka Durgamma Mandiram | Official Website</title>
+
+  <meta name="description" content="Official Website of Sri Kanaka Durgamma Temple. Learn about Navaratri celebrations, temple history, pooja timings, and devotional activities." />
+
+  <meta name="keywords" content="Kanaka Durgamma Temple, babu camp, kothagudem, Telangana" />
+
+  <meta name="author" content="Sri Kanaka Durgamma Mandiram" />
+
+  <link rel="icon" type="image/png" href="images/logo.png" />
+
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+
+
+  <style>
+
+    /* GENERAL */
+
+    body {
+
+      margin: 0;
+
+      font-family: 'Poppins', Arial, sans-serif;
+
+      background: #fff8e1;
+
+      color: #333;
+
+    }
+
+
+
+    a {
+
+      text-decoration: none;
+
+    }
+
+
+
+    /* ANIMATED TITLE (from your CSS editor) */
+
+    .animated-title {
+
+      font-size: 3rem;
+
+      color: #ffcc00;
+
+      text-align: center;
+
+      margin: 50px 0;
+
+      font-weight: 900;
+
+      text-transform: uppercase;
+
+      animation: glow 2s infinite alternate;
+
+      text-shadow:
+
+        1px 1px 0 #b30000,
+
+        2px 2px 0 #b30000,
+
+        3px 3px 0 #b30000,
+
+        4px 4px 0 #b30000;
+
+    }
+
+
+
+    @keyframes glow {
+
+      0% {
+
+        color: #ffcc00;
+
+        text-shadow:
+
+          1px 1px 0 #b30000,
+
+          2px 2px 0 #b30000,
+
+          3px 3px 0 #b30000,
+
+          4px 4px 0 #b30000;
+
+      }
+
+      50% {
+
+        color: #fff;
+
+        text-shadow:
+
+          2px 2px 5px #b30000,
+
+          4px 4px 10px #ff9900,
+
+          6px 6px 15px #ffcc00;
+
+      }
+
+      100% {
+
+        color: #ffcc00;
+
+        text-shadow:
+
+          1px 1px 0 #b30000,
+
+          2px 2px 0 #b30000,
+
+          3px 3px 0 #b30000,
+
+          4px 4px 0 #b30000;
+
+      }
+
+    }
+
+
+
+    /* HEADER */
+
+    header {
+
+      background: #b30000;
+
+      padding: 10px 20px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      position: sticky;
+
+      top: 0;
+
+      z-index: 1000;
+
+    }
+
+    header .logo {
+
+      height: 60px;
+
+      border-radius: 50%;
+
+    }
+
+    header nav ul {
+
+      list-style: none;
+
+      display: flex;
+
+      gap: 20px;
+
+      margin: 0;
+
+      padding: 0;
+
+    }
+
+    header nav ul li a {
+
+      color: #fff;
+
+      font-weight: 600;
+
+      padding: 8px 14px;
+
+      border-radius: 5px;
+
+      transition: 0.3s;
+
+      display: block; /* Make the entire link clickable area large */
+
+    }
+
+    header nav ul li a:hover {
+
+      background: #ffcc00;
+
+      color: #b30000;
+
+    }
+
+
+
+    /* HERO */
+
+    .hero {
+
+      background: url('https://i.ibb.co/DHjVvxsF/Whats-App-Image-2025-10-09-at-16-00-04.jpg') no-repeat center/cover;
+
+      min-height: 80vh;
+
+      display: flex;
+
+      flex-direction: column;
+
+      align-items: center;
+
+      justify-content: center;
+
+      text-align: center;
+
+      padding: 20px;
+
+    }
+
+    .hero h1 {
+
+      font-size: 3rem;
+
+      color: #ffcc00;
+
+      text-shadow: 2px 2px 8px #000;
+
+      margin-bottom: 10px;
+
+    }
+
+    .hero p {
+
+      color: #fff;
+
+      background: rgba(0, 0, 0, 0.4);
+
+      padding: 8px 20px;
+
+      border-radius: 8px;
+
+      margin-bottom: 20px;
+
+    }
+
+    .btn {
+
+      background: #ffcc00;
+
+      color: #b30000;
+
+      padding: 10px 25px;
+
+      border-radius: 5px;
+
+      font-weight: bold;
+
+      transition: 0.3s;
+
+    }
+
+    .btn:hover {
+
+      background: #fff;
+
+      color: #b30000;
+
+    }
+
+
+
+    /* GALLERY */
+
+    .gallery {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      justify-content: center;
+
+      gap: 20px;
+
+      margin: 40px 20px;
+
+    }
+
+    .gallery-item {
+
+      text-align: center;
+
+      width: 250px;
+
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+      border-radius: 10px;
+
+      overflow: hidden;
+
+      background-color: #fff;
+
+      padding-bottom: 15px;
+
+    }
+
+    .gallery img {
+
+      max-width: 100%;
+
+      height: auto;
+
+      display: block;
+
+      border-radius: 0;
+
+      transition: transform 0.3s;
+
+    }
+
+    .gallery img:hover {
+
+      transform: scale(1.03);
+
+    }
+
+    .caption {
+
+      margin: 8px 0 0;
+
+      font-size: 1rem;
+
+      color: #444;
+
+      font-weight: bold;
+
+    }
+
+
+
+    /* VIDEO SECTION */
+
+    .video-section, .section {
+
+      text-align: center;
+
+      padding: 50px 20px;
+
+      background: #fff3cd; /* Light background for contrast */
+
+    }
+
+    .video-section h2, .section h2 {
+
+      color: #b30000;
+
+      margin-bottom: 20px;
+
+      font-size: 2rem;
+
+    }
+
+    video {
+
+      width: 90%;
+
+      max-width: 800px;
+
+      border-radius: 10px;
+
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+
+      margin-bottom: 30px;
+
+    }
+
+    .video-section-container {
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 40px;
+
+        max-width: 900px;
+
+        margin: 0 auto;
+
+    }
+
+    .video-block {
+
+        width: 100%;
+
+        padding: 20px;
+
+        background-color: #fff;
+
+        border-radius: 10px;
+
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+    }
+
+   <section id="location">
+
+  <h2 style="text-align:center; color:#b30000; margin-bottom: 30px;">Temple Location</h2>
+
+  <div class="map-container">
+
+    
+
+    <iframe
+
+      src="https://ibb.co/Tx8SpBqq"><img src="https://i.ibb.co/sdwGkvJJ/google-image.jpg" 
+
+      width="100%"
+
+      height="400"
+
+      style="border:0;"
+
+      allowfullscreen="" 
+
+      loading="lazy" 
+
+      referrerpolicy="no-referrer-when-downgrade">
+
+    </iframe>
+
+    
+
+    <p style="text-align:center; margin-top:15px; font-weight: 600;">
+
+      📍 Sri Kanaka Durga Devi Temple, Babucamp, Kothagudem, Telangana
+
+    </p>
+
+    <a href="https://maps.google.com/?q=Sri+Kanaka+Durga+Devi+Temple+Babucamp+Kothagudem" target="_blank" class="map-link">
+
+        View Temple on Google Maps (opens in new tab)
+
+    </a>
+
+  </div>
+
+</section> 
+
+    /* LOCATION */
+
+#location {
+
+    padding: 50px 20px;
+
+    background-color: #fff8e1;
+
+}
+
+.map-container {
+
+    text-align: center;
+
+    margin: 0 auto 50px;
+
+    width: 90%;
+
+    max-width: 1000px;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+
+}
+
+.map-container iframe {
+
+    width: 100%;
+
+    height: 400px;
+
+    border: 0;
+
+}
+
+.map-container .map-link {
+
+    color: #b30000;
+
+    text-decoration: underline;
+
+    font-size: 0.9rem;
+
+    display: block;
+
+    margin-top: 5px;
+
+    font-weight: normal;
+
+}
+
+    
+
+    /* ABOUT US SECTION */
+
+    #about-us {
+
+        background-color: #fff;
+
+        text-align: left;
+
+    }
+
+    #about-us .content-box {
+
+        max-width: 900px;
+
+        margin: 0 auto;
+
+        padding: 30px;
+
+        border-radius: 10px;
+
+        background: #fafafa;
+
+    }
+
+    #about-us h1 {
+
+        color: #b30000;
+
+        text-align: center;
+
+        margin-bottom: 20px;
+
+    }
+
+    
+
+    /* FOOTER */
+
+    .footer {
+
+      background: #b30000;
+
+      color: #fff;
+
+      padding: 50px 20px 20px;
+
+    }
+
+    .footer-container {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      justify-content: space-between;
+
+      max-width: 1100px;
+
+      margin: auto;
+
+      gap: 40px;
+
+      text-align: left;
+
+    }
+
+    .footer-column {
+
+        flex: 1;
+
+        min-width: 200px;
+
+    }
+
+    .footer-column h3 {
+
+      color: #ffcc00;
+
+      margin-bottom: 15px;
+
+    }
+
+    .footer-column ul {
+
+        list-style: none;
+
+        padding: 0;
+
+    }
+
+    .footer-column ul li {
+
+        margin-bottom: 5px;
+
+    }
+
+    .footer-column a {
+
+      color: #ffcc00;
+
+    }
+
+    .footer-column a:hover {
+
+      text-decoration: underline;
+
+    }
+
+    .social-icons {
+
+      margin-top: 10px;
+
+      display: flex;
+
+      gap: 12px;
+
+      flex-wrap: wrap;
+
+      justify-content: flex-start;
+
+    }
+
+    .social-icons a img {
+
+      width: 35px;
+
+      height: 35px;
+
+      border-radius: 50%;
+
+      background: #fff;
+
+      padding: 6px;
+
+      transition: transform 0.3s, background 0.3s;
+
+    }
+
+    .social-icons a img:hover {
+
+      transform: scale(1.1);
+
+      background: #ffcc00;
+
+    }
+
+    .footer-bottom {
+
+      text-align: center;
+
+      margin-top: 30px;
+
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+      padding-top: 15px;
+
+      font-size: 0.9rem;
+
+    }
+
+
+
+    /* RESPONSIVE */
+
+    @media (max-width: 768px) {
+
+      header {
+
+        flex-direction: column;
+
+      }
+
+      header nav ul {
+
+        flex-direction: column;
+
+        gap: 10px;
+
+        margin-top: 10px;
+
+      }
+
+      .hero h1 {
+
+        font-size: 2rem;
+
+      }
+
+      .footer-container {
+
+        flex-direction: column;
+
+        text-align: center;
+
+      }
+
+      .social-icons {
+
+        justify-content: center;
+
+      }
+
+    }
+
+  </style>
+
+
+
+</head>
+
+
+
 <body>
-    <div class="animated-title">Sri Kanaka Durgamma Mandiram</div>
 
-    <header>
-        <img src="https://i.ibb.co/JwthtDxs/Whats-App-Image-2025-10-02-at-10-18-21.jpg" alt="Sri Kanaka Durgamma Mandiram Logo" class="logo">
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#pamphlet">Temple Pamphlet</a></li>
-                <li><a href="#videos">Videos</a></li>
-                <li><a href="#location">Location</a></li>
-                <li><a href="#about-us">About us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <div class="animated-title">Sri Kanaka Durgamma Mandiram</div>
 
-    <section id="home" class="hero">
-        <h1>Welcome to Sri Kanaka Durgamma Mandiram</h1>
-        <p>Experience the divine power and witness the blessings of Goddess Kanaka Durga.</p>
-    </section>
+  
 
-    <section id="gallery" class="gallery">
-        <div class="gallery-item">
-            <img src="https://i.ibb.co/MDzgw3Yq/Whats-App-Image-2025-10-06-at-19-32-59.jpg" alt="Sri Bala Tripura Sundari Devi">
-            <div class="caption">Sri Bala Tripura Sundari Devi</div>
-            <div class="caption-telugu">శ్రీ బాలా త్రిపుర సుందరి దేవి</div>
-        </div>
+  <header>
 
-        <div class="gallery-item">
-            <img src="https://i.ibb.co/wr0tsq6P/Whats-App-Image-2025-10-06-at-19-33-24.jpg" alt="Sri Lalitha Tripura Sundari Devi">
-            <div class="caption">Sri Lalitha Tripura Sundari Devi</div>
-            <div class="caption-telugu">శ్రీ లలితా త్రిపుర సుందరీ దేవి</div>
-        </div>
+    <img src="https://i.ibb.co/JwthtDxs/Whats-App-Image-2025-10-02-at-10-18-21.jpg" alt="Sri Kanaka Durgamma Mandiram Logo" class="logo">
 
-        <div class="gallery-item">
-            <img src="https://i.ibb.co/8L63kBph/Whats-App-Image-2025-10-06-at-19-33-51.jpg" alt="Sri Veda Matha Gayathri Devi">
-            <div class="caption">Sri Veda Matha Gayathri Devi</div>
-            <div class="caption-telugu">శ్రీ వేదమాత గాయత్రి దేవి</div>
-        </div>
+    <nav>
 
-        <div class="gallery-item">
-            <img src="https://i.ibb.co/B2VWgxWB/Whats-App-Image-2025-10-06-at-19-30-34.jpg" alt="Sri Kanchi Kamakshi Devi">
-            <div class="caption">Sri Kanchi Kamakshi Devi</div>
-            <div class="caption-telugu">శ్రీ కంచి కామాక్షి దేవి</div>
-        </div>
+      <ul>
 
-        <div class="gallery-item">
-            <img src="https://i.ibb.co/rGyscDT3/Whats-App-Image-2025-10-06-at-19-34-11.jpg" alt="Sri Mahalakshmi Devi">
-            <div class="caption">Sri Mahalakshmi Devi</div>
-            <div class="caption-telugu">శ్రీ మహాలక్ష్మీ దేవి</div>
-        </div>
+        <li><a href="#home">Home</a></li>
 
-        <div class="gallery-item">
-            <img src="https://i.ibb.co/gFDqWHRX/Whats-App-Image-2025-10-06-at-19-34-26.jpg" alt="Sri Annapoorna Devi">
-            <div class="caption">Sri Annapoorna Devi</div>
-            <div class="caption-telugu">శ్రీ అన్నపూర్ణ దేవి</div>
-        </div>
+        <li><a href="#gallery">Gallery</a></li>
 
-        <div class="gallery-item">
-            <img src="https://i.ibb.co/KxGWxJT4/Whats-App-Image-2025-10-06-at-19-35-04.jpg" alt="Sri Santhana Lakshmi">
-            <div class="caption">Sri Santhana Lakshmi</div>
-            <div class="caption-telugu">శ్రీ సంతాన లక్ష్మి</div>
-        </div>
+        <li><a href="#pamphlet">Temple Pamphlet</a></li>
 
-        <div class="gallery-item">
-            <img src="https://i.ibb.co/F4LQHDtM/Whats-App-Image-2025-10-06-at-19-35-19.jpg" alt="Sri Maha Saraswati Devi">
-            <div class="caption">Sri Maha Saraswati Devi</div>
-            <div class="caption-telugu">శ్రీ మహా సరస్వతీ దేవి</div>
-        </div>
+        <li><a href="#videos">Videos</a></li>
 
-        <div class="gallery-item">
-            <img src="https://i.ibb.co/hxbMTRxV/Whats-App-Image-2025-10-06-at-19-35-34.jpg" alt="Sri Durga Devi">
-            <div class="caption">Sri Vana Durga Devi</div>
-            <div class="caption-telugu">శ్రీ వన దుర్గా దేవి</div>
-        </div>
+        <li><a href="#location">Location</a></li>
 
-        <div class="gallery-item">
-            <img src="https://i.ibb.co/qFLNLvL6/Whats-App-Image-2025-10-06-at-19-36-01.jpg" alt="Sri Mahishasuramardini Devi">
-            <div class="caption">Sri Mahishasuramardini Devi</div>
-            <div class="caption-telugu">శ్రీ మహిషాసురమర్దిని దేవి</div>
-        </div>
+        <li><a href="#about-us">About us</a></li>
 
-        <div class="gallery-item">
-            <img src="https://i.ibb.co/JwthtDxs/Whats-App-Image-2025-10-02-at-10-18-21.jpg" alt="Sri Kanaka Durga Devi">
-            <div class="caption">Sri Kanaka Durga Devi</div>
-            <div class="caption-telugu">శ్రీ కనక దుర్గా దేవి</div>
-        </div>
-    </section>
+        <li><a href="#contact">Contact</a></li>
 
-    <section id="pamphlet" class="section">
-        <h2>Temple Pamphlet</h2>
-        <div class="gallery" style="margin-top: 30px;">
-            <div class="gallery-item" style="max-width: 400px;">
-                <img src="https://i.ibb.co/XH7czYL/Whats-App-Image-2025-10-09-at-18-35-38.jpg" alt="Pamphlet Front">
-                <div class="caption">Front Side</div>
-            </div>
-            <div class="gallery-item" style="max-width: 400px;">
-                <img src="https://i.ibb.co/4ncW7HQs/pamplate-2025.jpg" alt="Pamphlet Back">
-                <div class="caption">Back Side</div>
-            </div>
-        </div>
-    </section>
+      </ul>
 
-    <section id="videos" class="video-section">
-        <h2>Temple Celebrations Videos</h2>
-        <div class="video-section-container">
-            <div class="video-block">
-                <h3>Dasara Celebrations (దసరా సంబరాలు)</h3>
-                <video controls poster="https://i.ibb.co/DHjVvxsF/Whats-App-Image-2025-10-09-at-16-00-04.jpg">
-                    <source src="PLACE_YOUR_VIDEO_URL_HERE_DASARA.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <div class="video-block">
-                <h3>Durgamma Sambaralu (దుర్గమ్మ సంబరం)</h3>
-                <video controls>
-                    <source src="PLACE_YOUR_VIDEO_URL_HERE_SAMBARAM.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-        </div>
-    </section>
+    </nav>
 
-    <section id="location">
-        <h2 style="text-align:center; color:#b30000; margin-bottom: 30px;">Temple Location</h2>
-        <div class="map-container">
-            <iframe
-                src="https://ibb.co/Tx8SpBqq"><img src="https://i.ibb.co/sdwGkvJJ/google-image.jpg" 
-                width="100%"
-                height="400"
-                style="border:0;"
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-            <p style="text-align:center; margin-top:15px; font-weight: 600;">
-                📍 Sri Kanaka Durga Devi Temple, Babucamp, Kothagudem, Telangana
-            </p>
-            <a href="https://maps.google.com/?q=Sri+Kanaka+Durga+Devi+Temple+Babucamp+Kothagudem" target="_blank" class="map-link">
-                View Temple on Google Maps (opens in new tab)
-            </a>
-        </div>
-    </section>
+  </header>
 
-    <section id="about-us" class="section">
-        <div class="content-box">
-            <h1>About us</h1>
-            <h2>Sri Kanaka Durgamma Temple Sri Kanaka Durgamma Mandiram</h2>
-            <p>
-                The sacred <strong>Sri Kanaka Durgamma Temple</strong> stands as a divine symbol of devotion and faith
-                for over <strong>50+ years</strong>. Established by devoted villagers, the temple has been a guiding
-                spiritual force for thousands of devotees who seek the blessings of <strong>Durga Mata</strong>.
-            </p>
-            <p>
-                Every year, the temple celebrates the grand <strong>Durga Mata Navratri and Dasara Utsavam</strong>
-                with immense devotion and cultural unity. In <strong>2025</strong>, the <strong>Dasara Festival</strong>
-                was successfully celebrated with traditional poojas, alankarams, bhajans, and colorful decorations that
-                filled the air with spirituality and joy.
-            </p>
-            <p>
-                The temple continues to uphold age-old customs, nurturing faith and togetherness among devotees.
-                You can explore the memories of these sacred celebrations in our <a href="#gallery">Gallery</a> and <a href="#videos">Videos</a> sections.
-            </p>
-            <p><strong>🕉️ May Durgamma bless everyone with peace, prosperity, and strength. 🕉️</strong></p>
-        </div>
-    </section>
 
-    <footer class="footer">
-        <div id="contact" class="footer-container">
-            <div class="footer-column">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#pamphlet">Pamphlet</a></li>
-                    <li><a href="#videos">Videos</a></li>
-                    <li><a href="#location">Location</a></li>
-                    <li><a href="#about-us">About us</a></li>
-                </ul>
-            </div>
-            <div class="footer-column contact-info">
-                <h3>Contact Us</h3>
-                <p>Address: Sri Kanaka Durgamma Mandiram, Babu Camp, Kothagudem, Bhadradri Kothagudem dist 507101, India</p>
-                <div class="social-icons">
-                    <a href="https://www.instagram.com/babucamp_ammavari_temple/" target="_blank" title="Instagram">
-                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
-                    </a>
-                    <a href="https://www.facebook.com/YourPage" target="_blank" title="Facebook">
-                        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
-                    </a>
-                    <a href="https://wa.me/YourNumber" target="_blank" title="WhatsApp">
-                        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-                    </a>
-                </div>
-            </div>
-        </div>
 
-        <div class="footer-bottom">
-            <p>© 2025 Sri Kanaka Durgamma Mandiram | All Rights Reserved</p>
-        </div>
-    </footer>
+  <section id="home" class="hero">
+
+    <h1>Welcome to Sri Kanaka Durgamma Mandiram</h1>
+
+    <p>Experience the divine power and witness the blessings of Goddess Kanaka Durga.</p>
+
+  </section>
+
+
+
+  <section id="gallery" class="gallery">
+
+    <div class="gallery-item">
+
+      <img src="https://i.ibb.co/MDzgw3Yq/Whats-App-Image-2025-10-06-at-19-32-59.jpg" alt="Sri Bala Tripura Sundari Devi">
+
+      <div class="caption">Sri Bala Tripura Sundari Devi</div> 
+
+      <div class="caption-telugu">శ్రీ బాలా త్రిపుర సుందరి దేవి</div>
+
+    </div>
+
+
+
+    <div class="gallery-item">
+
+      <img src="https://i.ibb.co/wr0tsq6P/Whats-App-Image-2025-10-06-at-19-33-24.jpg" alt="Sri Lalitha Tripura Sundari Devi">
+
+      <div class="caption">Sri Lalitha Tripura Sundari Devi</div> 
+
+      <div class="caption-telugu">శ్రీ లలితా త్రిపుర సుందరీ దేవి</div>
+
+    </div>
+
+
+
+    <div class="gallery-item">
+
+      <img src="https://i.ibb.co/8L63kBph/Whats-App-Image-2025-10-06-at-19-33-51.jpg" alt="Sri Veda Matha Gayathri Devi">
+
+      <div class="caption">Sri Veda Matha Gayathri Devi</div> 
+
+      <div class="caption-telugu">శ్రీ వేదమాత గాయత్రి దేవి</div>
+
+    </div>
+
+
+
+    <div class="gallery-item">
+
+      <img src="https://i.ibb.co/B2VWgxWB/Whats-App-Image-2025-10-06-at-19-30-34.jpg" alt="Sri Kanchi Kamakshi Devi">
+
+      <div class="caption">Sri Kanchi Kamakshi Devi</div> 
+
+      <div class="caption-telugu">శ్రీ కంచి కామాక్షి దేవి</div>
+
+    </div>
+
+
+
+    <div class="gallery-item">
+
+      <img src="https://i.ibb.co/rGyscDT3/Whats-App-Image-2025-10-06-at-19-34-11.jpg" alt="Sri Mahalakshmi Devi">
+
+      <div class="caption">Sri Mahalakshmi Devi</div> 
+
+      <div class="caption-telugu">శ్రీ మహాలక్ష్మీ దేవి</div>
+
+    </div>
+
+
+
+    <div class="gallery-item">
+
+      <img src="https://i.ibb.co/gFDqWHRX/Whats-App-Image-2025-10-06-at-19-34-26.jpg" alt="Sri Annapoorna Devi">
+
+      <div class="caption">Sri Annapoorna Devi</div>
+
+      <div class="caption-telugu">శ్రీ అన్నపూర్ణ దేవి</div> 
+
+    </div>
+
+
+
+    <div class="gallery-item">
+
+      <img src="https://i.ibb.co/KxGWxJT4/Whats-App-Image-2025-10-06-at-19-35-04.jpg" alt="Sri Santhana Lakshmi">
+
+      <div class="caption">Sri Santhana Lakshmi</div>
+
+      <div class="caption-telugu">శ్రీ సంతాన లక్ష్మి</div> 
+
+    </div>
+
+
+
+    <div class="gallery-item">
+
+      <img src="https://i.ibb.co/F4LQHDtM/Whats-App-Image-2025-10-06-at-19-35-19.jpg" alt="Sri Maha Saraswati Devi">
+
+      <div class="caption">Sri Maha Saraswati Devi</div>
+
+      <div class="caption-telugu">శ్రీ మహా సరస్వతీ దేవి</div> 
+
+    </div>
+
+
+
+    <div class="gallery-item">
+
+      <img src="https://i.ibb.co/hxbMTRxV/Whats-App-Image-2025-10-06-at-19-35-34.jpg" alt="Sri Durga Devi">
+
+      <div class="caption">Sri Vana Durga Devi</div>
+
+      <div class="caption-telugu">శ్రీ వన దుర్గా దేవి</div> 
+
+    </div>
+
+
+
+    <div class="gallery-item">
+
+      <img src="https://i.ibb.co/qFLNLvL6/Whats-App-Image-2025-10-06-at-19-36-01.jpg" alt="Sri Mahishasuramardini Devi">
+
+      <div class="caption">Sri Mahishasuramardini Devi</div>
+
+      <div class="caption-telugu">శ్రీ మహిషాసురమర్దిని దేవి</div>
+
+    </div>
+
+
+
+    <div class="gallery-item">
+
+      <img src="https://i.ibb.co/JwthtDxs/Whats-App-Image-2025-10-02-at-10-18-21.jpg" alt="Sri Kanaka Durga Devi">
+
+      <div class="caption">Sri Kanaka Durga Devi</div>
+
+      <div class="caption-telugu">శ్రీ కనక దుర్గా దేవి</div>
+
+    </div> 
+
+  </section>
+
+
+
+  <section id="pamphlet" class="section">
+
+    <h2>Temple Pamphlet</h2>
+
+    <div class="gallery" style="margin-top: 30px;">
+
+      <div class="gallery-item" style="max-width: 400px;">
+
+        <img src="https://i.ibb.co/XH7czYL/Whats-App-Image-2025-10-09-at-18-35-38.jpg" alt="Pamphlet Front">
+
+        <div class="caption">Front Side</div>
+
+      </div>
+
+      <div class="gallery-item" style="max-width: 400px;">
+
+        <img src="https://i.ibb.co/4ncW7HQs/pamplate-2025.jpg" alt="Pamphlet Back">
+
+        <div class="caption">Back Side</div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <section id="videos" class="video-section">
+
+    <h2>Temple Celebrations Videos</h2>
+
+    <div class="video-section-container">
+
+        <div class="video-block">
+
+            <h3>Dasara Celebrations (దసరా సంబరాలు)</h3>
+
+            <video controls poster="https://i.ibb.co/DHjVvxsF/Whats-App-Image-2025-10-09-at-16-00-04.jpg">
+
+                <source src="PLACE_YOUR_VIDEO_URL_HERE_DASARA.mp4" type="video/mp4">
+
+                Your browser does not support the video tag.
+
+            </video>
+
+        </div>
+
+        <div class="video-block">
+
+            <h3>Durgamma Sambaralu (దుర్గమ్మ సంబరం)</h3>
+
+            <video controls>
+
+                <source src="PLACE_YOUR_VIDEO_URL_HERE_SAMBARAM.mp4" type="video/mp4">
+
+                Your browser does not support the video tag.
+
+            </video>
+
+        </div>
+
+    </div>
+
+  </section>
+
+
+
+  <section id="location" style="padding: 50px 20px;">
+
+    <h2 style="text-align:center; color:#b30000; margin-bottom: 30px;">Temple Location</h2>
+
+    <div class="map-container">
+
+      <iframe
+
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15250.627602055627!2d80.61200259999999!3d17.9620019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a48e8945f3c690d%3A0x2d17961d7a3c306d!2sBabu%20Camp%2C%20Kothagudem%2C%20Telangana%20507101!5e0!3m2!1sen!2sin!4v1633857600000!5m2!1sen!2sin"
+
+        width="100%"
+
+        height="400"
+
+        style="border:0;"
+
+        allowfullscreen="" 
+
+        loading="lazy" 
+
+        referrerpolicy="no-referrer-when-downgrade">
+
+      </iframe>
+
+      <p style="text-align:center; margin-top:15px; font-weight: 600;">
+
+        📍 Sri Kanaka Durga Devi Temple, Babucamp, Kothagudem, Telangana
+
+      </p>
+
+      <a href="https://www.google.com/maps/place/Sri+Kanaka+Durga+Devi+Temple,+Babu+Camp,+Kothagudem" target="_blank" class="map-link">
+
+          View Temple on Google Maps (opens in new tab)
+
+      </a>
+
+    </div>
+
+  </section>
+
+
+
+  <section id="about-us" class="section">
+
+    <div class="content-box">
+
+        <h1>About us</h1>
+
+        <h2>Sri Kanaka Durgamma Temple Sri Kanaka Durgamma Mandiram</h2>
+
+        <p>
+
+            The sacred <strong>Sri Kanaka Durgamma Temple</strong> stands as a divine symbol of devotion and faith 
+
+            for over <strong>50+ years</strong>. Established by devoted villagers, the temple has been a guiding 
+
+            spiritual force for thousands of devotees who seek the blessings of <strong>Durga Mata</strong>.
+
+        </p>
+
+        <p>
+
+            Every year, the temple celebrates the grand <strong>Durga Mata Navratri and Dasara Utsavam</strong> 
+
+            with immense devotion and cultural unity. In <strong>2025</strong>, the <strong>Dasara Festival</strong> 
+
+            was successfully celebrated with traditional poojas, alankarams, bhajans, and colorful decorations that 
+
+            filled the air with spirituality and joy.
+
+        </p>
+
+        <p>
+
+            The temple continues to uphold age-old customs, nurturing faith and togetherness among devotees.  
+
+            You can explore the memories of these sacred celebrations in our <a href="#gallery">Gallery</a> and <a href="#videos">Videos</a> sections.
+
+        </p>
+
+        <p><strong>🕉️ May Durgamma bless everyone with peace, prosperity, and strength. 🕉️</strong></p>
+
+    </div>
+
+  </section>
+
+
+
+  <footer class="footer">
+
+    <div id="contact" class="footer-container">
+
+      
+
+      <div class="footer-column">
+
+        <h3>Quick Links</h3>
+
+        <ul>
+
+          <li><a href="#home">Home</a></li>
+
+          <li><a href="#gallery">Gallery</a></li>
+
+          <li><a href="#pamphlet">Pamphlet</a></li>
+
+          <li><a href="#videos">Videos</a></li>
+
+          <li><a href="#location">Location</a></li>
+
+          <li><a href="#about-us">About us</a></li>
+
+        </ul>
+
+      </div>
+
+      
+
+      <div class="footer-column contact-info">
+
+        <h3>Contact Us</h3>
+
+        <p>Address: Sri Kanaka Durgamma Mandiram, Babu Camp, Kothagudem, Bhadradri Kothagudem dist 507101, India</p>
+
+        
+
+        <div class="social-icons">
+
+          <a href="https://www.instagram.com/babucamp_ammavari_temple/" target="_blank" title="Instagram">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+
+          </a>
+
+      
+
+          <a href="https://www.facebook.com/YourPage" target="_blank" title="Facebook">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+
+          </a>
+
+      
+
+          <a href="https://wa.me/YourNumber" target="_blank" title="WhatsApp">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+
+          </a>
+
+        </div>
+
+      </div>
+
+      
+
+    </div>
+
+
+
+    <div class="footer-bottom">
+
+      <p>© 2025 Sri Kanaka Durgamma Mandiram | All Rights Reserved</p>
+
+    </div>
+
+  </footer>
+
 </body>
+
 </html>
+
+
+
